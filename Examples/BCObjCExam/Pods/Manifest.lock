@@ -1,0 +1,21 @@
+PODS:
+  - BeastComponents (0.1.1)
+
+DEPENDENCIES:
+  - BeastComponents (from `https://github.com/istsest/BeastComponents.git`)
+
+EXTERNAL SOURCES:
+  BeastComponents:
+    :git: https://github.com/istsest/BeastComponents.git
+
+CHECKOUT OPTIONS:
+  BeastComponents:
+    :commit: 75a0aecd7860cf88661eeeecd7cecf2d6395d843
+    :git: https://github.com/istsest/BeastComponents.git
+
+SPEC CHECKSUMS:
+  BeastComponents: 6b1bf6c51b00d57e6358689ebeee3d78a07a1d54
+
+PODFILE CHECKSUM: c9ce3d78d2b94197b67534196d6e194e3f264637
+
+COCOAPODS: 1.2.1

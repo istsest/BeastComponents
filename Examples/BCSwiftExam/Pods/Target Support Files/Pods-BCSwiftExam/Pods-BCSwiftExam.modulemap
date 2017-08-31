@@ -1,0 +1,6 @@
+framework module Pods_BCSwiftExam {
+  umbrella header "Pods-BCSwiftExam-umbrella.h"
+
+  export *
+  module * { export * }
+}
