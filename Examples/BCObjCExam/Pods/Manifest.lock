@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   BeastComponents:
-    :commit: 75a0aecd7860cf88661eeeecd7cecf2d6395d843
+    :commit: d9c2e2224ff4b607ff3b60e33bc6b990690ceadb
     :git: https://github.com/istsest/BeastComponents.git
 
 SPEC CHECKSUMS:
