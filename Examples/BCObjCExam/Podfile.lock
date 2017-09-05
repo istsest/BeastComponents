@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   BeastComponents:
-    :commit: 1de518457ece798dc1d0bde71443843dc3f724a4
+    :commit: 2071a6ab999d56ea6a3ffae7dccbb40d170645c8
     :git: https://github.com/istsest/BeastComponents.git
 
 SPEC CHECKSUMS:
@@ -18,4 +18,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: c9ce3d78d2b94197b67534196d6e194e3f264637
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
