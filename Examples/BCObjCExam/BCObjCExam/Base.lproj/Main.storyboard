@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJH-wi-fvb" customClass="BCCoverFlowView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJH-wi-fvb" customClass="BCCoverFlowView" customModule="BeastComponents">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -33,6 +33,9 @@
                             <constraint firstAttribute="trailing" secondItem="cJH-wi-fvb" secondAttribute="trailing" id="Qni-oj-au6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coverFlowView" destination="cJH-wi-fvb" id="NuZ-GO-Zkp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
