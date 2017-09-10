@@ -13,6 +13,8 @@
 		AF472B6A1F58A9E000542790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF472B681F58A9E000542790 /* Main.storyboard */; };
 		AF472B6C1F58A9E000542790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF472B6B1F58A9E000542790 /* Assets.xcassets */; };
 		AF472B6F1F58A9E000542790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF472B6D1F58A9E000542790 /* LaunchScreen.storyboard */; };
+		AF92433D1F64BBC1002E20DB /* MoviePoster.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF92433C1F64BBC1002E20DB /* MoviePoster.xib */; };
+		AF9243401F64BE21002E20DB /* MoviePoster.m in Sources */ = {isa = PBXBuildFile; fileRef = AF92433F1F64BE21002E20DB /* MoviePoster.m */; };
 		DF245865471D0500E0E786A2 /* Pods_BCObjCExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660D8F996DEC0F637D73B91F /* Pods_BCObjCExam.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,9 @@
 		AF472B6B1F58A9E000542790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF472B6E1F58A9E000542790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF472B701F58A9E000542790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF92433C1F64BBC1002E20DB /* MoviePoster.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviePoster.xib; sourceTree = "<group>"; };
+		AF92433E1F64BE21002E20DB /* MoviePoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePoster.h; sourceTree = "<group>"; };
+		AF92433F1F64BE21002E20DB /* MoviePoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePoster.m; sourceTree = "<group>"; };
 		B6BE32C5FABAB9DFBDD7FF87 /* Pods-BCObjCExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCObjCExam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BCObjCExam/Pods-BCObjCExam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,11 +104,14 @@
 				AF472B631F58A9E000542790 /* AppDelegate.m */,
 				AF472B651F58A9E000542790 /* ViewController.h */,
 				AF472B661F58A9E000542790 /* ViewController.m */,
+				AF92433C1F64BBC1002E20DB /* MoviePoster.xib */,
 				AF472B681F58A9E000542790 /* Main.storyboard */,
 				AF472B6B1F58A9E000542790 /* Assets.xcassets */,
 				AF472B6D1F58A9E000542790 /* LaunchScreen.storyboard */,
 				AF472B701F58A9E000542790 /* Info.plist */,
 				AF472B5F1F58A9E000542790 /* Supporting Files */,
+				AF92433E1F64BE21002E20DB /* MoviePoster.h */,
+				AF92433F1F64BE21002E20DB /* MoviePoster.m */,
 			);
 			path = BCObjCExam;
 			sourceTree = "<group>";
@@ -180,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF472B6F1F58A9E000542790 /* LaunchScreen.storyboard in Resources */,
+				AF92433D1F64BBC1002E20DB /* MoviePoster.xib in Resources */,
 				AF472B6C1F58A9E000542790 /* Assets.xcassets in Resources */,
 				AF472B6A1F58A9E000542790 /* Main.storyboard in Resources */,
 			);
@@ -247,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF472B671F58A9E000542790 /* ViewController.m in Sources */,
+				AF9243401F64BE21002E20DB /* MoviePoster.m in Sources */,
 				AF472B641F58A9E000542790 /* AppDelegate.m in Sources */,
 				AF472B611F58A9E000542790 /* main.m in Sources */,
 			);

@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <BeastComponents/BeastComponents-Swift.h>
 
-@interface ViewController ()
+@interface ViewController () <BCCoverFlowViewDataSource, BCCoverFlowViewDelegate>
 
 @property (weak, nonatomic) IBOutlet BCCoverFlowView *coverFlowView;
 
@@ -20,6 +20,10 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
+	[self.coverFlowView registerWithNib:[UINib nibWithNibName:@"MoviePoster" bundle:nil] forCoverReuseIdentifier:@"MoviePoster"];
+	
+	self.coverFlowView.gradientColorForStream = UIColor.blackColor;
+	
 	[self.coverFlowView reloadData];
 }
 
@@ -29,5 +33,12 @@
 	// Dispose of any resources that can be recreated.
 }
 
+- (NSInteger)numberOfCoversIn:(BCCoverFlowView *)coverFlowView {
+	return 1;
+}
+
+- (BCCoverContentView *)coverFlowView:(BCCoverFlowView *)coverFlowView contentAt:(NSInteger)index {
+	
+}
 
 @end
