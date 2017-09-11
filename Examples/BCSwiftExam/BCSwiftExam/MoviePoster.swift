@@ -11,11 +11,13 @@ import BeastComponents
 
 class MoviePoster: BCCoverContentView {
 
+	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var imageView: UIImageView!
 	
 	override func prepareForReuse() {
 		super.prepareForReuse()
 		
+		self.titleLabel.text = nil
 		self.imageView.image = nil
 	}
 	
@@ -24,6 +26,8 @@ class MoviePoster: BCCoverContentView {
 			if let imageName = self.movie?["image"] as? String {
 				self.imageView.image = UIImage(named: imageName)
 			}
+
+			self.titleLabel.text = self.movie?["title"] as? String
 		}
 	}
 }

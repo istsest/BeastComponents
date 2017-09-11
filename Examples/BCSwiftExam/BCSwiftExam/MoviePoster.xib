@@ -14,11 +14,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoviePosterImage12" translatesAutoresizingMaskIntoConstraints="NO" id="hNe-nA-1Hj">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hNe-nA-1Hj">
                     <rect key="frame" x="4" y="4" width="367" height="659"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpj-FY-b5s">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpj-FY-b5s">
                     <rect key="frame" x="4" y="4" width="367" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="GcX-B0-dY1"/>
@@ -30,7 +30,7 @@
                     <size key="shadowOffset" width="1" height="1"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Fpj-FY-b5s" secondAttribute="trailing" constant="4" id="4VL-FN-KS3"/>
                 <constraint firstItem="hNe-nA-1Hj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="Cyi-zx-Lyw"/>
@@ -42,11 +42,9 @@
             </constraints>
             <connections>
                 <outlet property="imageView" destination="hNe-nA-1Hj" id="CUW-ot-HsW"/>
+                <outlet property="titleLabel" destination="Fpj-FY-b5s" id="JLP-K7-gwN"/>
             </connections>
             <point key="canvasLocation" x="26.5" y="52.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="MoviePosterImage12" width="720" height="1080"/>
-    </resources>
 </document>

@@ -14,18 +14,19 @@
 
 /* Begin PBXFileReference section */
 		1CE84AE020F047022E0EC9F080746704 /* Pods-BCSwiftExam-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BCSwiftExam-frameworks.sh"; sourceTree = "<group>"; };
-		1E01DDB301CB006F1F2CF721005AD789 /* BeastComponents-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BeastComponents-Swift.h"; path = "BeastComponents/BeastComponents.framework/Headers/BeastComponents-Swift.h"; sourceTree = "<group>"; };
 		20BD281298F570751100C04812D85396 /* Pods-BCSwiftExam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BCSwiftExam-dummy.m"; sourceTree = "<group>"; };
+		388D72DB395A4442B4540846210F090F /* BCCoverContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCCoverContentView.h; path = BeastComponents/BeastComponents.framework/Headers/BCCoverContentView.h; sourceTree = "<group>"; };
+		44253492B9347545A5980CECF350BA41 /* BeastComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BeastComponents.framework; path = BeastComponents/BeastComponents.framework; sourceTree = "<group>"; };
 		51A32B0850EA1B0D6FE484A1D9CB0CF6 /* Pods-BCSwiftExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BCSwiftExam.release.xcconfig"; sourceTree = "<group>"; };
 		5218CDBC922D5F2421CD8DF3EFFC3F7E /* Pods-BCSwiftExam-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BCSwiftExam-resources.sh"; sourceTree = "<group>"; };
-		5E360E96343DE9EDA3D5E99CB5E56419 /* BCBubble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCBubble.h; path = BeastComponents/BeastComponents.framework/Headers/BCBubble.h; sourceTree = "<group>"; };
 		6202F9B5D76BF32BE4E843FCEC4344E1 /* Pods-BCSwiftExam-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BCSwiftExam-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		69B3EEA18082B7163C8E6631325E9AA5 /* BeastComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeastComponents.h; path = BeastComponents/BeastComponents.framework/Headers/BeastComponents.h; sourceTree = "<group>"; };
 		6E2A89824BF7375CA3392665BADB0A6D /* Pods-BCSwiftExam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BCSwiftExam-umbrella.h"; sourceTree = "<group>"; };
+		88BB8DEE35B631D5CA549229FC2AEB9E /* BeastComponents-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BeastComponents-Swift.h"; path = "BeastComponents/BeastComponents.framework/Headers/BeastComponents-Swift.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C1439251EE976DFCD2A94227718D9775 /* Pods-BCSwiftExam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BCSwiftExam.modulemap"; sourceTree = "<group>"; };
 		C5622B969DCF35DEF31236A4913F4510 /* Pods_BCSwiftExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BCSwiftExam.framework; path = "Pods-BCSwiftExam.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D51B3553AD8E8AA8324A316A03975BC0 /* BeastComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BeastComponents.framework; path = BeastComponents/BeastComponents.framework; sourceTree = "<group>"; };
 		DD43C6A62E3FD234E90A5E868DA4095D /* Pods-BCSwiftExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BCSwiftExam.debug.xcconfig"; sourceTree = "<group>"; };
 		DF9B35D3F6DD98512A2A251281D5AF9C /* Pods-BCSwiftExam-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BCSwiftExam-acknowledgements.plist"; sourceTree = "<group>"; };
 		EC8472C80A7C199189CB95103E70768E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,20 +44,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		63A15710366D073D6D56DC4F6DE1F881 /* Pods */ = {
+		5FD4C22C03DCFE6628B9AB89835825BB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DA5F65F8B95E9EC639DDF60C3628285A /* BeastComponents */,
+				E01359AE2207975557902D3088CBC095 /* BeastComponents */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		6E29503D253FF1E397911FA737273FE9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D51B3553AD8E8AA8324A316A03975BC0 /* BeastComponents.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -64,7 +57,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				63A15710366D073D6D56DC4F6DE1F881 /* Pods */,
+				5FD4C22C03DCFE6628B9AB89835825BB /* Pods */,
 				911C8E7325CE9A1AC81E12938FBAB611 /* Products */,
 				C1FE1F779CA18AF98262E6EAF772993F /* Targets Support Files */,
 			);
@@ -96,6 +89,14 @@
 			path = "Target Support Files/Pods-BCSwiftExam";
 			sourceTree = "<group>";
 		};
+		976922B5E6552A662D38E519F9BAF6C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44253492B9347545A5980CECF350BA41 /* BeastComponents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,12 +121,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DA5F65F8B95E9EC639DDF60C3628285A /* BeastComponents */ = {
+		E01359AE2207975557902D3088CBC095 /* BeastComponents */ = {
 			isa = PBXGroup;
 			children = (
-				5E360E96343DE9EDA3D5E99CB5E56419 /* BCBubble.h */,
-				1E01DDB301CB006F1F2CF721005AD789 /* BeastComponents-Swift.h */,
-				6E29503D253FF1E397911FA737273FE9 /* Frameworks */,
+				388D72DB395A4442B4540846210F090F /* BCCoverContentView.h */,
+				69B3EEA18082B7163C8E6631325E9AA5 /* BeastComponents.h */,
+				88BB8DEE35B631D5CA549229FC2AEB9E /* BeastComponents-Swift.h */,
+				976922B5E6552A662D38E519F9BAF6C1 /* Frameworks */,
 			);
 			name = BeastComponents;
 			path = BeastComponents;

@@ -9,7 +9,7 @@
 import UIKit
 import BeastComponents
 
-class ViewController: UIViewController, BCCoverFlowViewDataSource, BCCoverFlowViewDelegate {
+class ViewController: UIViewController, BCCoverFlowViewDataSource, BCCoverFlowViewDelegate, UINavigationControllerDelegate {
 	
 	@IBOutlet weak var coverFlowView: BCCoverFlowView!
 	
@@ -17,6 +17,8 @@ class ViewController: UIViewController, BCCoverFlowViewDataSource, BCCoverFlowVi
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		self.navigationController?.delegate = self
 		
 		self.loadMovies()
 		
@@ -49,8 +51,23 @@ class ViewController: UIViewController, BCCoverFlowViewDataSource, BCCoverFlowVi
 	}
 	
 	func coverFlowView(_ coverFlowView: BCCoverFlowView, contentAt index: Int) -> BCCoverContentView {
-		let coverView = self.coverFlowView.dequeueReusableCoverContentView(withIdentifier: "MoviePoster", for: index)
+		let coverView = self.coverFlowView.dequeueReusableCoverContentView(withIdentifier: "MoviePoster", for: index) as! MoviePoster
+		coverView.movie = self.movies[index]
 		return coverView
 	}
+	
+	func coverFlowView(_ coverFlowView: BCCoverFlowView, didSelectCoverViewAtIndex index: Int) {
+		let vc = self.storyboard?.instantiateViewController(withIdentifier: "MovieDetailView") as! MovieDetailTableViewController
+		if let selectedPosterView = self.coverFlowView.coverContentView(for: index) as? MoviePoster {
+			vc.imageHeight = selectedPosterView.imageView.bounds.size.height
+		}
+		vc.movie = self.movies[index]
+		self.navigationController?.pushViewController(vc, animated: true)
+	}
+
+	func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+		return operation == .push ? self.coverFlowView.presentDetailAnimationController.zoomIn : self.coverFlowView.presentDetailAnimationController.zoomOut
+	}
+	
 }
 
