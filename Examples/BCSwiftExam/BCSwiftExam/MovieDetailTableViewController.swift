@@ -11,6 +11,8 @@ import UIKit
 class MovieDetailTableViewController: UITableViewController {
 	
 	@IBOutlet weak var imageView: UIImageView!
+	@IBOutlet weak var infoLabel: UILabel!
+	@IBOutlet weak var descriptionLabel: UILabel!
 	
 	var imageHeight: CGFloat = 100
 	
@@ -19,9 +21,15 @@ class MovieDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+		self.tableView.rowHeight = UITableViewAutomaticDimension
+		self.tableView.estimatedRowHeight = 100
+		
+		self.title = self.movie?["title"] as? String
 		if let imageName = self.movie?["image"] as? String {
 			self.imageView.image = UIImage(named: imageName)
 		}
+		self.infoLabel.text = self.movie?["info"] as? String
+		self.descriptionLabel.text = self.movie?["description"] as? String
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,8 +41,10 @@ class MovieDetailTableViewController: UITableViewController {
 		switch indexPath.row {
 		case 0:
 			return self.imageHeight + 8
+		case 2:
+			return UITableViewAutomaticDimension
 		default:
-			return 40
+			return 44
 		}
 	}
 
