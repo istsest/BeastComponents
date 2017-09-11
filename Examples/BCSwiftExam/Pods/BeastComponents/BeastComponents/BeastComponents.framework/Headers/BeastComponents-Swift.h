@@ -134,6 +134,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
+@import ObjectiveC;
 @import Foundation;
 #endif
 
@@ -283,7 +284,10 @@ SWIFT_CLASS("_TtC15BeastComponents18BCCoverContentView")
 
 @protocol BCCoverFlowViewDataSource;
 @class UIColor;
+@class BCCoverFlowViewPresentDetailAnimationController;
 @class UINib;
+@class UITouch;
+@class UIEvent;
 
 /// View has covers are flowing through.
 SWIFT_CLASS("_TtC15BeastComponents15BCCoverFlowView")
@@ -302,6 +306,7 @@ SWIFT_CLASS("_TtC15BeastComponents15BCCoverFlowView")
 @property (nonatomic, strong) UIColor * _Nonnull gradientColorForStream;
 /// Height of area for a just passed over cover.
 @property (nonatomic) CGFloat heightOverPassed;
+@property (nonatomic, readonly, strong) BCCoverFlowViewPresentDetailAnimationController * _Nonnull presentDetailAnimationController;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -352,6 +357,10 @@ SWIFT_CLASS("_TtC15BeastComponents15BCCoverFlowView")
 - (void)scrollToCoverContentAt:(NSInteger)index animated:(BOOL)animated;
 - (void)layoutSubviews;
 @property (nonatomic) CGPoint contentOffset;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
 - (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
 - (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
@@ -388,13 +397,39 @@ SWIFT_PROTOCOL("_TtP15BeastComponents23BCCoverFlowViewDelegate_")
 @protocol BCCoverFlowViewDelegate <UIScrollViewDelegate>
 @optional
 /// Tells the delegate that the top cover content view was updated from the cover-flow view.
-/// \param coverFlowView The cover-flow view object requesting this information.
+/// \param coverFlowView A cover-flow view object informing the delegate about the cover view scale depending on scroll.
 ///
 /// \param index An index locating a stream in coverFlowView.
 ///
 /// \param scale Scale of scroll distance from vertical standard.
 ///
 - (void)coverFlowView:(BCCoverFlowView * _Nonnull)coverFlowView didUpdateTopCoverContentViewIndex:(NSInteger)index scrollScale:(CGFloat)scale;
+/// Tells the delegate that the specified row is now selected.
+/// \param coverFlowView A cover-flow view object informing the delegate about the new row selection.
+///
+/// \param index An index locating a stream in coverFlowView.
+///
+- (void)coverFlowView:(BCCoverFlowView * _Nonnull)coverFlowView didSelectCoverViewAtIndex:(NSInteger)index;
+@end
+
+@protocol UIViewControllerContextTransitioning;
+
+SWIFT_CLASS("_TtC15BeastComponents47BCCoverFlowViewPresentDetailAnimationController")
+@interface BCCoverFlowViewPresentDetailAnimationController : NSObject <UIViewControllerAnimatedTransitioning>
+/// Provides zoon-in transition for presenting detail view controller.
+@property (nonatomic, readonly, strong) BCCoverFlowViewPresentDetailAnimationController * _Nonnull zoomIn;
+/// Provides zoon-out transition for presenting detail view controller.
+@property (nonatomic, readonly, strong) BCCoverFlowViewPresentDetailAnimationController * _Nonnull zoomOut;
+/// Provides zoon-in and flip-left-to-right transition for presenting detail view controller.
+@property (nonatomic, readonly, strong) BCCoverFlowViewPresentDetailAnimationController * _Nonnull zoomInAndFlipRight;
+/// Provides zoon-in and flip-right-to-left  transition for presenting detail view controller.
+@property (nonatomic, readonly, strong) BCCoverFlowViewPresentDetailAnimationController * _Nonnull zoomOutAndFlipLeft;
+- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning> _Nullable)transitionContext SWIFT_WARN_UNUSED_RESULT;
+- (void)animateTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
+- (void)animateZoomInTransitionUsing:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
+- (void)animateZoomOutTransitionUsing:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
+- (void)animateZoomAndFlipTransitionUsing:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
 
