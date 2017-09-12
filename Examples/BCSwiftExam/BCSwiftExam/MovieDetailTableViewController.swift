@@ -13,6 +13,7 @@ class MovieDetailTableViewController: UITableViewController {
 	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet weak var infoLabel: UILabel!
 	@IBOutlet weak var descriptionLabel: UILabel!
+	@IBOutlet weak var backButton: UIButton!
 	
 	var imageHeight: CGFloat = 100
 	
@@ -30,6 +31,8 @@ class MovieDetailTableViewController: UITableViewController {
 		}
 		self.infoLabel.text = self.movie?["info"] as? String
 		self.descriptionLabel.text = self.movie?["description"] as? String
+		
+		self.backButton.isHidden = (self.navigationController != nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,4 +51,8 @@ class MovieDetailTableViewController: UITableViewController {
 		}
 	}
 
+	@IBAction func dismiss(_ sender: Any) {
+		self.dismiss(animated: true, completion: nil)
+	}
+	
 }

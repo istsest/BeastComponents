@@ -64,12 +64,28 @@
                                                     <rect key="frame" x="4" y="4" width="367" height="192"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnF-Y1-o3s">
+                                                    <rect key="frame" x="12" y="12" width="44" height="30"/>
+                                                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="C2i-Qn-x9Y"/>
+                                                        <constraint firstAttribute="width" constant="44" id="gcx-Ud-Abz"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Back">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="dismiss:" destination="bUU-Wl-noA" eventType="touchUpInside" id="gsf-n2-Kqj"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="NxK-7v-Efl" secondAttribute="trailing" constant="4" id="BTd-Xl-s5R"/>
+                                                <constraint firstItem="wnF-Y1-o3s" firstAttribute="leading" secondItem="l29-z2-wgN" secondAttribute="leading" constant="12" id="F7P-X7-Z0f"/>
                                                 <constraint firstAttribute="bottom" secondItem="NxK-7v-Efl" secondAttribute="bottom" constant="4" id="FFC-UF-Syc"/>
                                                 <constraint firstItem="NxK-7v-Efl" firstAttribute="top" secondItem="l29-z2-wgN" secondAttribute="top" constant="4" id="pbW-uY-XKK"/>
                                                 <constraint firstItem="NxK-7v-Efl" firstAttribute="leading" secondItem="l29-z2-wgN" secondAttribute="leading" constant="4" id="qAb-iI-R4z"/>
+                                                <constraint firstItem="wnF-Y1-o3s" firstAttribute="top" secondItem="l29-z2-wgN" secondAttribute="top" constant="12" id="yT1-Gy-IjT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -116,6 +132,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="backButton" destination="wnF-Y1-o3s" id="qMQ-w2-hI5"/>
                         <outlet property="descriptionLabel" destination="uc1-Gb-NAw" id="5XE-Je-yfQ"/>
                         <outlet property="imageView" destination="NxK-7v-Efl" id="XRi-G2-lX6"/>
                         <outlet property="infoLabel" destination="aGU-6Z-iXc" id="0ua-wx-JX0"/>

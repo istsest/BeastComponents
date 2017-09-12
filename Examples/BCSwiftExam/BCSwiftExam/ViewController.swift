@@ -9,7 +9,7 @@
 import UIKit
 import BeastComponents
 
-class ViewController: UIViewController, BCCoverFlowViewDataSource, BCCoverFlowViewDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, BCCoverFlowViewDataSource, BCCoverFlowViewDelegate, UINavigationControllerDelegate, UIViewControllerTransitioningDelegate {
 	
 	@IBOutlet weak var coverFlowView: BCCoverFlowView!
 	
@@ -63,11 +63,25 @@ class ViewController: UIViewController, BCCoverFlowViewDataSource, BCCoverFlowVi
 		}
 		vc.movie = self.movies[index]
 		self.navigationController?.pushViewController(vc, animated: true)
+		
+		/*
+		// It supports transitions to be presented and dismissed on UIViewControllerTransitioningDelegate, too. 
+		vc.transitioningDelegate = self
+		self.present(vc, animated: true, completion: nil)
+		*/
 	}
 
 	func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 		return operation == .push ? self.coverFlowView.presentDetailAnimationController.zoomIn : self.coverFlowView.presentDetailAnimationController.zoomOut
 	}
 	
+	func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+		return self.coverFlowView.presentDetailAnimationController.zoomInAndFlipRight
+	}
+	
+	func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+		return self.coverFlowView.presentDetailAnimationController.zoomOutAndFlipLeft
+	}
+
 }
 
