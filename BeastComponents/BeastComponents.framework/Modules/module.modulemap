@@ -7,4 +7,5 @@ framework module BeastComponents {
 
 module BeastComponents.Swift {
     header "BeastComponents-Swift.h"
+    requires objc
 }
