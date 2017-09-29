@@ -484,6 +484,20 @@ SWIFT_CLASS("_TtC15BeastComponents47BCCoverFlowViewPresentDetailAnimationControl
 @end
 
 
+SWIFT_CLASS("_TtC15BeastComponents11BCRatingBar")
+@interface BCRatingBar : UIView
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@property (nonatomic, strong) UIColor * _Null_unspecified ratingTintColor SWIFT_DEPRECATED_OBJC("Swift property 'BCRatingBar.ratingTintColor' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic, strong) UIImage * _Nullable ratingBackgroundImage SWIFT_DEPRECATED_OBJC("Swift property 'BCRatingBar.ratingBackgroundImage' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic) float internalRate SWIFT_DEPRECATED_OBJC("Swift property 'BCRatingBar.internalRate' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic) float rate SWIFT_DEPRECATED_OBJC("Swift property 'BCRatingBar.rate' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+- (void)setRate:(float)rate animated:(BOOL)animated SWIFT_DEPRECATED_OBJC("Swift method 'BCRatingBar.setRate(_:animated:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@end
+
+
 
 
 
