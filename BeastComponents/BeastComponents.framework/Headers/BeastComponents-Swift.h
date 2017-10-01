@@ -488,11 +488,11 @@ SWIFT_CLASS("_TtC15BeastComponents11BCRatingBar")
 @interface BCRatingBar : UIView
 @property (nonatomic) NSInteger numberOfStars SWIFT_DEPRECATED_OBJC("Swift property 'BCRatingBar.numberOfStars' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic) CGFloat spaceBetweenStars SWIFT_DEPRECATED_OBJC("Swift property 'BCRatingBar.spaceBetweenStars' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic, strong) UIColor * _Nonnull trackTintColor SWIFT_DEPRECATED_OBJC("Swift property 'BCRatingBar.trackTintColor' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
-- (void)drawRect:(CGRect)rect;
 @property (nonatomic, strong) UIColor * _Null_unspecified ratingTintColor SWIFT_DEPRECATED_OBJC("Swift property 'BCRatingBar.ratingTintColor' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, strong) UIImage * _Nullable ratingBackgroundImage SWIFT_DEPRECATED_OBJC("Swift property 'BCRatingBar.ratingBackgroundImage' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic) float internalRate SWIFT_DEPRECATED_OBJC("Swift property 'BCRatingBar.internalRate' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
