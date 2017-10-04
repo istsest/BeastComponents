@@ -356,6 +356,7 @@ SWIFT_CLASS("_TtC15BeastComponents15BCCoverFlowView")
 @property (nonatomic, strong) UIColor * _Nonnull gradientColorForStream SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowView.gradientColorForStream' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 /// Height of area for a just passed over cover.
 @property (nonatomic) CGFloat heightOverPassed SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowView.heightOverPassed' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic) BOOL isContinuousSideBySide SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowView.isContinuousSideBySide' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, readonly, strong) BCCoverFlowViewPresentDetailAnimationController * _Nonnull presentDetailAnimationController SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowView.presentDetailAnimationController' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
