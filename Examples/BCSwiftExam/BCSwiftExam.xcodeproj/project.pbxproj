@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		78D6B9113D50C3D2703D730D /* Pods_BCSwiftExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0CC4849315C552B589C943 /* Pods_BCSwiftExam.framework */; };
 		AF472B8E1F58AD2900542790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF472B8D1F58AD2900542790 /* AppDelegate.swift */; };
-		AF472B901F58AD2900542790 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF472B8F1F58AD2900542790 /* ViewController.swift */; };
+		AF472B901F58AD2900542790 /* TestCoverFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF472B8F1F58AD2900542790 /* TestCoverFlowViewController.swift */; };
 		AF472B931F58AD2900542790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF472B911F58AD2900542790 /* Main.storyboard */; };
 		AF472B951F58AD2900542790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF472B941F58AD2900542790 /* Assets.xcassets */; };
 		AF472B981F58AD2900542790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF472B961F58AD2900542790 /* LaunchScreen.storyboard */; };
@@ -37,7 +37,7 @@
 		66842BE500B8C5FC51FA7A8E /* Pods-BCSwiftExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCSwiftExam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BCSwiftExam/Pods-BCSwiftExam.debug.xcconfig"; sourceTree = "<group>"; };
 		AF472B8A1F58AD2900542790 /* BCSwiftExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCSwiftExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF472B8D1F58AD2900542790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF472B8F1F58AD2900542790 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF472B8F1F58AD2900542790 /* TestCoverFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoverFlowViewController.swift; sourceTree = "<group>"; };
 		AF472B921F58AD2900542790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF472B941F58AD2900542790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF472B971F58AD2900542790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				AF472B8D1F58AD2900542790 /* AppDelegate.swift */,
-				AF472B8F1F58AD2900542790 /* ViewController.swift */,
+				AF472B8F1F58AD2900542790 /* TestCoverFlowViewController.swift */,
 				AF9243481F65F980002E20DB /* MoviePoster.swift */,
 				AF92434A1F65F998002E20DB /* MoviePoster.xib */,
 				AFE5C2FB1F66311400887209 /* MovieDetailTableViewController.swift */,
@@ -246,7 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF472B901F58AD2900542790 /* ViewController.swift in Sources */,
+				AF472B901F58AD2900542790 /* TestCoverFlowViewController.swift in Sources */,
 				AFE5C2FC1F66311400887209 /* MovieDetailTableViewController.swift in Sources */,
 				AF472B8E1F58AD2900542790 /* AppDelegate.swift in Sources */,
 				AF9243491F65F980002E20DB /* MoviePoster.swift in Sources */,
@@ -379,7 +379,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wizsoft.BCSwiftExam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -394,7 +394,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wizsoft.BCSwiftExam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
