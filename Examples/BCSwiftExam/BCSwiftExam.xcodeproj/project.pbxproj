@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78D6B9113D50C3D2703D730D /* Pods_BCSwiftExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0CC4849315C552B589C943 /* Pods_BCSwiftExam.framework */; };
+		AF2359971F8C1A6700ADFB12 /* TestRatingBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2359961F8C1A6700ADFB12 /* TestRatingBarViewController.swift */; };
 		AF472B8E1F58AD2900542790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF472B8D1F58AD2900542790 /* AppDelegate.swift */; };
 		AF472B901F58AD2900542790 /* TestCoverFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF472B8F1F58AD2900542790 /* TestCoverFlowViewController.swift */; };
 		AF472B931F58AD2900542790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF472B911F58AD2900542790 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		293AE001AE7F2E5581BD2FB8 /* Pods-BCSwiftExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCSwiftExam.release.xcconfig"; path = "Pods/Target Support Files/Pods-BCSwiftExam/Pods-BCSwiftExam.release.xcconfig"; sourceTree = "<group>"; };
 		66842BE500B8C5FC51FA7A8E /* Pods-BCSwiftExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCSwiftExam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BCSwiftExam/Pods-BCSwiftExam.debug.xcconfig"; sourceTree = "<group>"; };
+		AF2359961F8C1A6700ADFB12 /* TestRatingBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRatingBarViewController.swift; sourceTree = "<group>"; };
 		AF472B8A1F58AD2900542790 /* BCSwiftExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCSwiftExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF472B8D1F58AD2900542790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF472B8F1F58AD2900542790 /* TestCoverFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoverFlowViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				AF9243481F65F980002E20DB /* MoviePoster.swift */,
 				AF92434A1F65F998002E20DB /* MoviePoster.xib */,
 				AFE5C2FB1F66311400887209 /* MovieDetailTableViewController.swift */,
+				AF2359961F8C1A6700ADFB12 /* TestRatingBarViewController.swift */,
 				AF472B911F58AD2900542790 /* Main.storyboard */,
 				AF472B941F58AD2900542790 /* Assets.xcassets */,
 				AF472B961F58AD2900542790 /* LaunchScreen.storyboard */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF472B901F58AD2900542790 /* TestCoverFlowViewController.swift in Sources */,
+				AF2359971F8C1A6700ADFB12 /* TestRatingBarViewController.swift in Sources */,
 				AFE5C2FC1F66311400887209 /* MovieDetailTableViewController.swift in Sources */,
 				AF472B8E1F58AD2900542790 /* AppDelegate.swift in Sources */,
 				AF9243491F65F980002E20DB /* MoviePoster.swift in Sources */,
