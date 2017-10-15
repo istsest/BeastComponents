@@ -71,7 +71,7 @@
                                                     <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.5" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="C2i-Qn-x9Y"/>
-                                                        <constraint firstAttribute="width" constant="44" id="gcx-Ud-Abz"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="gcx-Ud-Abz"/>
                                                     </constraints>
                                                     <state key="normal" title="Back">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,6 +87,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="NxK-7v-Efl" secondAttribute="bottom" constant="4" id="FFC-UF-Syc"/>
                                                 <constraint firstItem="NxK-7v-Efl" firstAttribute="top" secondItem="l29-z2-wgN" secondAttribute="top" constant="4" id="pbW-uY-XKK"/>
                                                 <constraint firstItem="NxK-7v-Efl" firstAttribute="leading" secondItem="l29-z2-wgN" secondAttribute="leading" constant="4" id="qAb-iI-R4z"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wnF-Y1-o3s" secondAttribute="trailing" constant="20" symbolic="YES" id="u1Y-fN-Mdx"/>
                                                 <constraint firstItem="wnF-Y1-o3s" firstAttribute="top" secondItem="l29-z2-wgN" secondAttribute="top" constant="12" id="yT1-Gy-IjT"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -191,7 +192,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="push" id="hBS-Km-M8I"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="hBS-Km-M8I"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="LeX-mY-OM8" style="IBUITableViewCellStyleDefault" id="Lsv-B7-bvZ">
@@ -211,7 +212,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ArN-l1-trv" kind="push" id="qSp-DG-kOY"/>
+                                            <segue destination="ArN-l1-trv" kind="show" id="qSp-DG-kOY"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -288,6 +289,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="grb-Di-bsE"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeRating:" destination="ArN-l1-trv" eventType="valueChanged" id="Nqh-xb-InY"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -674,7 +678,7 @@
                         <outlet property="backgroundTintBlueColorSlider" destination="xPz-9k-YyW" id="vtG-8W-kJf"/>
                         <outlet property="backgroundTintGreenColorSlider" destination="uXy-SX-cXO" id="Q8I-H9-Y34"/>
                         <outlet property="backgroundTintRedColorSlider" destination="Dzz-78-Znj" id="jbO-Wi-bPw"/>
-                        <outlet property="ratingBar" destination="NOY-Aw-DgP" id="Dv2-9N-Vlx"/>
+                        <outlet property="ratingBar" destination="NOY-Aw-DgP" id="vHh-aH-Cxl"/>
                         <outlet property="ratingBarSizeSlider" destination="2GQ-Cw-bWn" id="rb6-EJ-xCR"/>
                         <outlet property="ratingBarWidth" destination="8L2-U6-mQc" id="D4d-lf-UdO"/>
                         <outlet property="ratingSlider" destination="BJw-Vy-lNj" id="JP4-BY-kr2"/>
