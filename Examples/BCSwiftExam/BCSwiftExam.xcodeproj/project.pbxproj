@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF0943EE1F94229100AB7E79 /* BeastComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0943ED1F94223D00AB7E79 /* BeastComponents.framework */; };
-		AF0943EF1F94229100AB7E79 /* BeastComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF0943ED1F94223D00AB7E79 /* BeastComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AF2359971F8C1A6700ADFB12 /* TestRatingBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2359961F8C1A6700ADFB12 /* TestRatingBarViewController.swift */; };
+		AF0943F21F94272000AB7E79 /* TestRatingBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943F11F94271F00AB7E79 /* TestRatingBarViewController.swift */; };
 		AF472B8E1F58AD2900542790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF472B8D1F58AD2900542790 /* AppDelegate.swift */; };
 		AF472B901F58AD2900542790 /* TestCoverFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF472B8F1F58AD2900542790 /* TestCoverFlowViewController.swift */; };
 		AF472B931F58AD2900542790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF472B911F58AD2900542790 /* Main.storyboard */; };
@@ -19,6 +17,9 @@
 		AF92434B1F65F998002E20DB /* MoviePoster.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF92434A1F65F998002E20DB /* MoviePoster.xib */; };
 		AFE5C2F81F6624A100887209 /* Movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE5C2F71F6624A100887209 /* Movies.plist */; };
 		AFE5C2FC1F66311400887209 /* MovieDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE5C2FB1F66311400887209 /* MovieDetailTableViewController.swift */; };
+		AFFB7EDC1F954855002A0004 /* BeastComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFB7EDB1F954855002A0004 /* BeastComponents.framework */; };
+		AFFB7EDD1F9548D8002A0004 /* BeastComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFB7EDB1F954855002A0004 /* BeastComponents.framework */; };
+		AFFB7EDE1F9548D8002A0004 /* BeastComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFFB7EDB1F954855002A0004 /* BeastComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AF0943EF1F94229100AB7E79 /* BeastComponents.framework in Embed Frameworks */,
+				AFFB7EDE1F9548D8002A0004 /* BeastComponents.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,8 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AF0943ED1F94223D00AB7E79 /* BeastComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BeastComponents.framework; path = ../../BeastComponents/BeastComponents.framework; sourceTree = "<group>"; };
-		AF2359961F8C1A6700ADFB12 /* TestRatingBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRatingBarViewController.swift; sourceTree = "<group>"; };
+		AF0943F11F94271F00AB7E79 /* TestRatingBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRatingBarViewController.swift; sourceTree = "<group>"; };
 		AF472B8A1F58AD2900542790 /* BCSwiftExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCSwiftExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF472B8D1F58AD2900542790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF472B8F1F58AD2900542790 /* TestCoverFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoverFlowViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +49,7 @@
 		AF92434A1F65F998002E20DB /* MoviePoster.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviePoster.xib; sourceTree = "<group>"; };
 		AFE5C2F71F6624A100887209 /* Movies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Movies.plist; sourceTree = "<group>"; };
 		AFE5C2FB1F66311400887209 /* MovieDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailTableViewController.swift; sourceTree = "<group>"; };
+		AFFB7EDB1F954855002A0004 /* BeastComponents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeastComponents.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF0943EE1F94229100AB7E79 /* BeastComponents.framework in Frameworks */,
+				AFFB7EDD1F9548D8002A0004 /* BeastComponents.framework in Frameworks */,
+				AFFB7EDC1F954855002A0004 /* BeastComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +70,6 @@
 			children = (
 				AF472B8C1F58AD2900542790 /* BCSwiftExam */,
 				AF472B8B1F58AD2900542790 /* Products */,
-				AF836A0F1F9416E6000C765B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,12 +84,13 @@
 		AF472B8C1F58AD2900542790 /* BCSwiftExam */ = {
 			isa = PBXGroup;
 			children = (
+				AFFB7EDA1F954855002A0004 /* Frameworks */,
 				AF472B8D1F58AD2900542790 /* AppDelegate.swift */,
 				AF472B8F1F58AD2900542790 /* TestCoverFlowViewController.swift */,
 				AF9243481F65F980002E20DB /* MoviePoster.swift */,
 				AF92434A1F65F998002E20DB /* MoviePoster.xib */,
 				AFE5C2FB1F66311400887209 /* MovieDetailTableViewController.swift */,
-				AF2359961F8C1A6700ADFB12 /* TestRatingBarViewController.swift */,
+				AF0943F11F94271F00AB7E79 /* TestRatingBarViewController.swift */,
 				AF472B911F58AD2900542790 /* Main.storyboard */,
 				AF472B941F58AD2900542790 /* Assets.xcassets */,
 				AF472B961F58AD2900542790 /* LaunchScreen.storyboard */,
@@ -98,12 +100,12 @@
 			path = BCSwiftExam;
 			sourceTree = "<group>";
 		};
-		AF836A0F1F9416E6000C765B /* Frameworks */ = {
+		AFFB7EDA1F954855002A0004 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AF0943ED1F94223D00AB7E79 /* BeastComponents.framework */,
+				AFFB7EDB1F954855002A0004 /* BeastComponents.framework */,
 			);
-			name = Frameworks;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF472B901F58AD2900542790 /* TestCoverFlowViewController.swift in Sources */,
-				AF2359971F8C1A6700ADFB12 /* TestRatingBarViewController.swift in Sources */,
+				AF0943F21F94272000AB7E79 /* TestRatingBarViewController.swift in Sources */,
 				AFE5C2FC1F66311400887209 /* MovieDetailTableViewController.swift in Sources */,
 				AF472B8E1F58AD2900542790 /* AppDelegate.swift in Sources */,
 				AF9243491F65F980002E20DB /* MoviePoster.swift in Sources */,
@@ -325,15 +327,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				DEVELOPMENT_TEAM = VBN4Q77435;
-				FRAMEWORK_SEARCH_PATHS = "../../BeastComponents/**";
-				HEADER_SEARCH_PATHS = "../../BeastComponents/**";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/BCSwiftExam/Frameworks";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = BCSwiftExam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wizsoft.BCSwiftExam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "../../BeastComponents/**";
+				SHARED_PRECOMPS_DIR = "$(OBJROOT)/SharedPrecompiledHeaders";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -342,15 +348,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				DEVELOPMENT_TEAM = VBN4Q77435;
-				FRAMEWORK_SEARCH_PATHS = "../../BeastComponents/**";
-				HEADER_SEARCH_PATHS = "../../BeastComponents/**";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/BCSwiftExam/Frameworks";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = BCSwiftExam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wizsoft.BCSwiftExam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "../../BeastComponents/**";
+				SHARED_PRECOMPS_DIR = "$(OBJROOT)/SharedPrecompiledHeaders";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

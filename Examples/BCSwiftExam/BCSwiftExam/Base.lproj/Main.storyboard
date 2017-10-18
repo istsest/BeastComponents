@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -242,7 +241,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOY-Aw-DgP" customClass="BCRatingBar" customModule="BeastComponents">
-                                <rect key="frame" x="87.5" y="20" width="200" height="100"/>
+                                <rect key="frame" x="88" y="20" width="200" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="8L2-U6-mQc"/>
@@ -253,13 +252,13 @@
                                 <rect key="frame" x="0.0" y="128" width="375" height="475"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbc-BZ-9LZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="689"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="725"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1q-91-F3R">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sru-B3-a8t">
-                                                        <rect key="frame" x="28" y="49" width="60" height="21"/>
+                                                        <rect key="frame" x="20" y="49" width="60" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="IYa-ee-TSf"/>
                                                             <constraint firstAttribute="height" constant="21" id="y2j-jD-qA7"/>
@@ -269,13 +268,32 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="100" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="2GQ-Cw-bWn">
-                                                        <rect key="frame" x="94" y="45" width="255" height="30"/>
+                                                        <rect key="frame" x="86" y="45" width="263" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="32O-dp-0j2"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeRatingBarSize:" destination="ArN-l1-trv" eventType="valueChanged" id="1E7-Y2-zrZ"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87n-z0-Ct9">
+                                                        <rect key="frame" x="20" y="86" width="60" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="J0R-5J-PmK"/>
+                                                            <constraint firstAttribute="height" constant="21" id="OEO-Ny-DnS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="HaL-6r-rXc">
+                                                        <rect key="frame" x="86" y="82" width="263" height="31"/>
+                                                        <connections>
+                                                            <action selector="didChangeRatingBarSpace:" destination="ArN-l1-trv" eventType="valueChanged" id="94d-Ko-C52"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qy-MF-7uM">
-                                                        <rect key="frame" x="28" y="12" width="60" height="21"/>
+                                                        <rect key="frame" x="20" y="12" width="60" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="Wwm-93-bZT"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="vnG-CN-2P4"/>
@@ -285,7 +303,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BJw-Vy-lNj">
-                                                        <rect key="frame" x="94" y="8" width="255" height="30"/>
+                                                        <rect key="frame" x="86" y="8" width="263" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="grb-Di-bsE"/>
                                                         </constraints>
@@ -297,21 +315,26 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="BJw-Vy-lNj" firstAttribute="top" secondItem="n1q-91-F3R" secondAttribute="top" constant="8" id="0j1-ld-d4e"/>
-                                                    <constraint firstItem="2GQ-Cw-bWn" firstAttribute="trailing" secondItem="n1q-91-F3R" secondAttribute="trailingMargin" constant="-20" id="7Bg-Y8-uS7"/>
                                                     <constraint firstItem="2GQ-Cw-bWn" firstAttribute="leading" secondItem="sru-B3-a8t" secondAttribute="trailing" constant="8" id="APX-Oj-xCX"/>
                                                     <constraint firstItem="2GQ-Cw-bWn" firstAttribute="top" secondItem="BJw-Vy-lNj" secondAttribute="bottom" constant="8" id="BI3-nH-xWI"/>
                                                     <constraint firstItem="BJw-Vy-lNj" firstAttribute="centerY" secondItem="8qy-MF-7uM" secondAttribute="centerY" id="EPZ-Ff-DD0"/>
                                                     <constraint firstItem="BJw-Vy-lNj" firstAttribute="leading" secondItem="8qy-MF-7uM" secondAttribute="trailing" constant="8" id="H8A-Np-eIO"/>
                                                     <constraint firstItem="BJw-Vy-lNj" firstAttribute="leading" secondItem="8qy-MF-7uM" secondAttribute="trailing" constant="8" id="KEi-ZN-izI"/>
-                                                    <constraint firstAttribute="height" constant="90" id="TQq-f0-orb"/>
-                                                    <constraint firstItem="8qy-MF-7uM" firstAttribute="leading" secondItem="n1q-91-F3R" secondAttribute="leadingMargin" constant="20" id="Z1D-jY-zSg"/>
-                                                    <constraint firstItem="sru-B3-a8t" firstAttribute="leading" secondItem="n1q-91-F3R" secondAttribute="leadingMargin" constant="20" id="aGz-gx-hWo"/>
-                                                    <constraint firstItem="BJw-Vy-lNj" firstAttribute="trailing" secondItem="n1q-91-F3R" secondAttribute="trailingMargin" constant="-20" id="sT6-w8-eq5"/>
+                                                    <constraint firstItem="HaL-6r-rXc" firstAttribute="top" secondItem="2GQ-Cw-bWn" secondAttribute="bottom" constant="8" id="POz-wI-DLl"/>
+                                                    <constraint firstItem="87n-z0-Ct9" firstAttribute="leading" secondItem="n1q-91-F3R" secondAttribute="leading" constant="20" id="Rhi-hF-Pk2"/>
+                                                    <constraint firstItem="HaL-6r-rXc" firstAttribute="leading" secondItem="87n-z0-Ct9" secondAttribute="trailing" constant="8" id="SgJ-kL-onL"/>
+                                                    <constraint firstAttribute="height" constant="126" id="TQq-f0-orb"/>
+                                                    <constraint firstItem="87n-z0-Ct9" firstAttribute="centerY" secondItem="HaL-6r-rXc" secondAttribute="centerY" id="Vc4-zJ-sZH"/>
+                                                    <constraint firstItem="sru-B3-a8t" firstAttribute="leading" secondItem="n1q-91-F3R" secondAttribute="leading" constant="20" id="Xne-x1-Xap"/>
+                                                    <constraint firstAttribute="trailing" secondItem="BJw-Vy-lNj" secondAttribute="trailing" constant="28" id="dma-JC-BQb"/>
+                                                    <constraint firstItem="8qy-MF-7uM" firstAttribute="leading" secondItem="n1q-91-F3R" secondAttribute="leading" constant="20" id="fQT-TS-wXf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="HaL-6r-rXc" secondAttribute="trailing" constant="28" id="qpx-Pc-TXU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2GQ-Cw-bWn" secondAttribute="trailing" constant="28" id="yBz-Zt-IAN"/>
                                                     <constraint firstItem="2GQ-Cw-bWn" firstAttribute="centerY" secondItem="sru-B3-a8t" secondAttribute="centerY" id="yXn-lr-Nvd"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bxl-BT-d9d">
-                                                <rect key="frame" x="0.0" y="90" width="375" height="193"/>
+                                                <rect key="frame" x="0.0" y="126" width="375" height="193"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating Tint Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPV-Jc-NNu">
                                                         <rect key="frame" x="8" y="8" width="359" height="21"/>
@@ -337,6 +360,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="mbd-5m-tXF"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeRatingTintColor:" destination="ArN-l1-trv" eventType="valueChanged" id="CEp-or-h54"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR6-9C-iue">
                                                         <rect key="frame" x="16" y="78" width="60" height="21"/>
@@ -353,6 +379,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="Eo1-L4-lUP"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeRatingTintColor:" destination="ArN-l1-trv" eventType="valueChanged" id="Hag-fT-k7u"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eer-dl-1Xc">
                                                         <rect key="frame" x="16" y="115" width="60" height="21"/>
@@ -369,6 +398,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="5x6-rx-Qak"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeRatingTintColor:" destination="ArN-l1-trv" eventType="valueChanged" id="2V4-pv-gNI"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn5-FN-1sL">
                                                         <rect key="frame" x="16" y="152" width="60" height="21"/>
@@ -385,6 +417,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="XCW-AL-vqR"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeRatingTintColor:" destination="ArN-l1-trv" eventType="valueChanged" id="Fef-Si-PGb"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -419,7 +454,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rb8-Y5-czK">
-                                                <rect key="frame" x="0.0" y="283" width="375" height="193"/>
+                                                <rect key="frame" x="0.0" y="319" width="375" height="193"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Tint Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ha-KR-eJk">
                                                         <rect key="frame" x="8" y="8" width="359" height="21"/>
@@ -445,6 +480,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="WId-FK-OkX"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeTrackTintColor:" destination="ArN-l1-trv" eventType="valueChanged" id="Zcq-MX-fAq"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cp-SV-93U">
                                                         <rect key="frame" x="16" y="78" width="60" height="21"/>
@@ -461,6 +499,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="Yle-HP-Q68"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeTrackTintColor:" destination="ArN-l1-trv" eventType="valueChanged" id="siS-hB-64Z"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl8-s0-VTd">
                                                         <rect key="frame" x="16" y="115" width="60" height="21"/>
@@ -477,6 +518,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="25E-Up-TTF"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeTrackTintColor:" destination="ArN-l1-trv" eventType="valueChanged" id="fe5-6u-jg2"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUL-n5-Gui">
                                                         <rect key="frame" x="16" y="152" width="60" height="21"/>
@@ -493,6 +537,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="hfM-6R-02c"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeTrackTintColor:" destination="ArN-l1-trv" eventType="valueChanged" id="x6P-ga-R6T"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -527,7 +574,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d61-ZL-TMS">
-                                                <rect key="frame" x="0.0" y="476" width="375" height="193"/>
+                                                <rect key="frame" x="0.0" y="512" width="375" height="193"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wl-PJ-ybt">
                                                         <rect key="frame" x="8" y="8" width="359" height="21"/>
@@ -553,6 +600,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="5Js-c2-3qa"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeRatingBackgroundColor:" destination="ArN-l1-trv" eventType="valueChanged" id="O7I-b7-eOS"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZY-7l-8fN">
                                                         <rect key="frame" x="16" y="78" width="60" height="21"/>
@@ -569,6 +619,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="Wmv-b6-bMO"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeRatingBackgroundColor:" destination="ArN-l1-trv" eventType="valueChanged" id="LX0-jq-srR"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrC-5T-Zej">
                                                         <rect key="frame" x="16" y="115" width="60" height="21"/>
@@ -585,6 +638,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="Lr4-pT-Bth"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeRatingBackgroundColor:" destination="ArN-l1-trv" eventType="valueChanged" id="KMc-Ut-VeQ"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKe-4U-YzB">
                                                         <rect key="frame" x="16" y="152" width="60" height="21"/>
@@ -601,6 +657,9 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="29" id="zJ2-jZ-7ah"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <action selector="didChangeRatingBackgroundColor:" destination="ArN-l1-trv" eventType="valueChanged" id="qPW-Sa-agk"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -674,12 +733,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Rating" id="iPl-Ng-UyB"/>
                     <connections>
-                        <outlet property="backgroundTintAlphaColorSlider" destination="IMR-YC-R8m" id="Jw1-Vs-NfN"/>
-                        <outlet property="backgroundTintBlueColorSlider" destination="xPz-9k-YyW" id="vtG-8W-kJf"/>
-                        <outlet property="backgroundTintGreenColorSlider" destination="uXy-SX-cXO" id="Q8I-H9-Y34"/>
-                        <outlet property="backgroundTintRedColorSlider" destination="Dzz-78-Znj" id="jbO-Wi-bPw"/>
+                        <outlet property="backgroundAlphaColorSlider" destination="IMR-YC-R8m" id="GND-r1-gdu"/>
+                        <outlet property="backgroundBlueColorSlider" destination="xPz-9k-YyW" id="Lxh-br-MxE"/>
+                        <outlet property="backgroundGreenColorSlider" destination="uXy-SX-cXO" id="oze-n7-atG"/>
+                        <outlet property="backgroundRedColorSlider" destination="Dzz-78-Znj" id="QJt-ou-O9Z"/>
                         <outlet property="ratingBar" destination="NOY-Aw-DgP" id="vHh-aH-Cxl"/>
                         <outlet property="ratingBarSizeSlider" destination="2GQ-Cw-bWn" id="rb6-EJ-xCR"/>
+                        <outlet property="ratingBarSpaceSlider" destination="HaL-6r-rXc" id="9Ny-Qm-MMG"/>
                         <outlet property="ratingBarWidth" destination="8L2-U6-mQc" id="D4d-lf-UdO"/>
                         <outlet property="ratingSlider" destination="BJw-Vy-lNj" id="JP4-BY-kr2"/>
                         <outlet property="ratingTintAlphaColorSlider" destination="QRA-ve-RfO" id="S76-Ac-h5d"/>
