@@ -17,7 +17,6 @@
 		AF92434B1F65F998002E20DB /* MoviePoster.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF92434A1F65F998002E20DB /* MoviePoster.xib */; };
 		AFE5C2F81F6624A100887209 /* Movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE5C2F71F6624A100887209 /* Movies.plist */; };
 		AFE5C2FC1F66311400887209 /* MovieDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE5C2FB1F66311400887209 /* MovieDetailTableViewController.swift */; };
-		AFFB7EDC1F954855002A0004 /* BeastComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFB7EDB1F954855002A0004 /* BeastComponents.framework */; };
 		AFFB7EDD1F9548D8002A0004 /* BeastComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFB7EDB1F954855002A0004 /* BeastComponents.framework */; };
 		AFFB7EDE1F9548D8002A0004 /* BeastComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFFB7EDB1F954855002A0004 /* BeastComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -58,7 +57,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFFB7EDD1F9548D8002A0004 /* BeastComponents.framework in Frameworks */,
-				AFFB7EDC1F954855002A0004 /* BeastComponents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +134,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Beasts;
 				TargetAttributes = {
 					AF472B891F58AD2900542790 = {
