@@ -25,6 +25,7 @@ class TestCoverFlowViewController: UIViewController, BCCoverFlowViewDataSource, 
 		
 		self.coverFlowView.register(nib: UINib.init(nibName: "MoviePoster", bundle: nil), forCoverReuseIdentifier: "MoviePoster")
 		
+//		self.coverFlowView.coverFlowStyle = .bottom
 		self.coverFlowView.gradientColorForStream = .black
 		self.coverFlowView.heightOverPassed = 40
 		
@@ -54,6 +55,11 @@ class TestCoverFlowViewController: UIViewController, BCCoverFlowViewDataSource, 
 	func coverFlowView(_ coverFlowView: BCCoverFlowView, contentAt index: Int) -> BCCoverContentView {
 		let coverView = self.coverFlowView.dequeueReusableCoverContentView(withIdentifier: "MoviePoster", for: index) as! MoviePoster
 		coverView.movie = self.movies[index]
+		coverView.onDeletePoster = {
+			coverFlowView.deleteItem(at:index, with: .left, completion: { [weak self] in
+				self?.movies.remove(at: index)
+			})
+		}
 		return coverView
 	}
 	

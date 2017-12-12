@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -32,6 +33,24 @@
                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <size key="shadowOffset" width="1" height="1"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uP6-Ei-kDp">
+                            <rect key="frame" x="8" y="629" width="30" height="30"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="f7x-YD-I0h"/>
+                                <constraint firstAttribute="width" constant="30" id="h0K-f0-TZy"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="trash_can"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="deletePoster:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fga-2t-CSC"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -41,6 +60,8 @@
                         <constraint firstItem="Fpj-FY-b5s" firstAttribute="top" secondItem="j50-3f-EXH" secondAttribute="top" constant="4" id="F54-PT-TFa"/>
                         <constraint firstAttribute="trailing" secondItem="Fpj-FY-b5s" secondAttribute="trailing" constant="4" id="F9p-Ts-9a1"/>
                         <constraint firstItem="hNe-nA-1Hj" firstAttribute="leading" secondItem="j50-3f-EXH" secondAttribute="leading" constant="4" id="OH0-GM-eKj"/>
+                        <constraint firstItem="uP6-Ei-kDp" firstAttribute="leading" secondItem="j50-3f-EXH" secondAttribute="leading" constant="8" id="b6A-gd-GBW"/>
+                        <constraint firstAttribute="bottom" secondItem="uP6-Ei-kDp" secondAttribute="bottom" constant="8" id="csN-WR-YLU"/>
                         <constraint firstItem="hNe-nA-1Hj" firstAttribute="top" secondItem="j50-3f-EXH" secondAttribute="top" constant="4" id="k16-RB-INJ"/>
                     </constraints>
                 </view>
@@ -59,4 +80,7 @@
             <point key="canvasLocation" x="26.5" y="52.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="trash_can" width="20" height="20"/>
+    </resources>
 </document>

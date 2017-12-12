@@ -14,6 +14,8 @@ class MoviePoster: BCCoverContentView {
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var imageView: UIImageView!
 	
+	var onDeletePoster: (() -> Void)?
+	
 	override func prepareForReuse() {
 		super.prepareForReuse()
 		
@@ -30,4 +32,9 @@ class MoviePoster: BCCoverContentView {
 			self.titleLabel.text = self.movie?["title"] as? String
 		}
 	}
+	
+	@IBAction func deletePoster(_ sender: Any) {
+		self.onDeletePoster?()
+	}
+	
 }
