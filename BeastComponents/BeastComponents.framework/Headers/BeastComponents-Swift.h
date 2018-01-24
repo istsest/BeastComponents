@@ -469,6 +469,7 @@ SWIFT_PROTOCOL("_TtP15BeastComponents23BCCoverFlowViewDelegate_")
 
 SWIFT_CLASS("_TtC15BeastComponents47BCCoverFlowViewPresentDetailAnimationController")
 @interface BCCoverFlowViewPresentDetailAnimationController : NSObject <UIViewControllerAnimatedTransitioning>
+@property (nonatomic, copy) void (^ _Nullable customizedAnimation)(BOOL) SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowViewPresentDetailAnimationController.customizedAnimation' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 /// Provides zoon-in transition for presenting detail view controller.
 @property (nonatomic, readonly, strong) BCCoverFlowViewPresentDetailAnimationController * _Nonnull zoomIn SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowViewPresentDetailAnimationController.zoomIn' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 /// Provides zoon-out transition for presenting detail view controller.
