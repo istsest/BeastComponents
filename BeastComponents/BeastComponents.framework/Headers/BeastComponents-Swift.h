@@ -358,7 +358,8 @@ SWIFT_CLASS("_TtC15BeastComponents15BCCoverFlowView")
 @property (nonatomic) CGFloat heightOverPassed SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowView.heightOverPassed' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic) BOOL isContinuousSideBySide SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowView.isContinuousSideBySide' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic) CGFloat additionalCoverHeightForSideBySide SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowView.additionalCoverHeightForSideBySide' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
-@property (nonatomic, readonly, strong) BCCoverFlowViewPresentDetailAnimationController * _Nonnull presentDetailAnimationController SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowView.presentDetailAnimationController' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic, readonly, strong) BCCoverContentView * _Nullable topCoverContentView SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowView.topCoverContentView' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@property (nonatomic, strong) BCCoverFlowViewPresentDetailAnimationController * _Nonnull presentDetailAnimationController SWIFT_DEPRECATED_OBJC("Swift property 'BCCoverFlowView.presentDetailAnimationController' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
