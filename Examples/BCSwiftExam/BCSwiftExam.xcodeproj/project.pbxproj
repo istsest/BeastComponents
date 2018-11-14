@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AF0943F21F94272000AB7E79 /* TestRatingBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943F11F94271F00AB7E79 /* TestRatingBarViewController.swift */; };
+		AF1B76B1219B680D00BACED7 /* TestProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B76AF219B680D00BACED7 /* TestProgressBarViewController.swift */; };
+		AF1B76B2219B680D00BACED7 /* TestArrowAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B76B0219B680D00BACED7 /* TestArrowAlertViewController.swift */; };
 		AF472B8E1F58AD2900542790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF472B8D1F58AD2900542790 /* AppDelegate.swift */; };
 		AF472B901F58AD2900542790 /* TestCoverFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF472B8F1F58AD2900542790 /* TestCoverFlowViewController.swift */; };
 		AF472B931F58AD2900542790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF472B911F58AD2900542790 /* Main.storyboard */; };
 		AF472B951F58AD2900542790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF472B941F58AD2900542790 /* Assets.xcassets */; };
 		AF472B981F58AD2900542790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF472B961F58AD2900542790 /* LaunchScreen.storyboard */; };
+		AF8B5728219C9F6200F20B63 /* BeastComponentsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AF8B5727219C9F6200F20B63 /* BeastComponentsBundle.bundle */; };
 		AF9243491F65F980002E20DB /* MoviePoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9243481F65F980002E20DB /* MoviePoster.swift */; };
 		AF92434B1F65F998002E20DB /* MoviePoster.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF92434A1F65F998002E20DB /* MoviePoster.xib */; };
 		AFE5C2F81F6624A100887209 /* Movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE5C2F71F6624A100887209 /* Movies.plist */; };
@@ -37,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		AF0943F11F94271F00AB7E79 /* TestRatingBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRatingBarViewController.swift; sourceTree = "<group>"; };
+		AF1B76AF219B680D00BACED7 /* TestProgressBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProgressBarViewController.swift; sourceTree = "<group>"; };
+		AF1B76B0219B680D00BACED7 /* TestArrowAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestArrowAlertViewController.swift; sourceTree = "<group>"; };
 		AF472B8A1F58AD2900542790 /* BCSwiftExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCSwiftExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF472B8D1F58AD2900542790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF472B8F1F58AD2900542790 /* TestCoverFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoverFlowViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		AF472B941F58AD2900542790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF472B971F58AD2900542790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF472B991F58AD2900542790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8B5727219C9F6200F20B63 /* BeastComponentsBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BeastComponentsBundle.bundle; sourceTree = "<group>"; };
 		AF9243481F65F980002E20DB /* MoviePoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePoster.swift; sourceTree = "<group>"; };
 		AF92434A1F65F998002E20DB /* MoviePoster.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviePoster.xib; sourceTree = "<group>"; };
 		AFE5C2F71F6624A100887209 /* Movies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Movies.plist; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 				AF92434A1F65F998002E20DB /* MoviePoster.xib */,
 				AFE5C2FB1F66311400887209 /* MovieDetailTableViewController.swift */,
 				AF0943F11F94271F00AB7E79 /* TestRatingBarViewController.swift */,
+				AF1B76B0219B680D00BACED7 /* TestArrowAlertViewController.swift */,
+				AF1B76AF219B680D00BACED7 /* TestProgressBarViewController.swift */,
 				AF472B911F58AD2900542790 /* Main.storyboard */,
 				AF472B941F58AD2900542790 /* Assets.xcassets */,
 				AF472B961F58AD2900542790 /* LaunchScreen.storyboard */,
@@ -101,6 +109,7 @@
 		AFFB7EDA1F954855002A0004 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF8B5727219C9F6200F20B63 /* BeastComponentsBundle.bundle */,
 				AFFB7EDB1F954855002A0004 /* BeastComponents.framework */,
 			);
 			path = Frameworks;
@@ -168,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF472B981F58AD2900542790 /* LaunchScreen.storyboard in Resources */,
+				AF8B5728219C9F6200F20B63 /* BeastComponentsBundle.bundle in Resources */,
 				AFE5C2F81F6624A100887209 /* Movies.plist in Resources */,
 				AF92434B1F65F998002E20DB /* MoviePoster.xib in Resources */,
 				AF472B951F58AD2900542790 /* Assets.xcassets in Resources */,
@@ -183,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF472B901F58AD2900542790 /* TestCoverFlowViewController.swift in Sources */,
+				AF1B76B1219B680D00BACED7 /* TestProgressBarViewController.swift in Sources */,
+				AF1B76B2219B680D00BACED7 /* TestArrowAlertViewController.swift in Sources */,
 				AF0943F21F94272000AB7E79 /* TestRatingBarViewController.swift in Sources */,
 				AFE5C2FC1F66311400887209 /* MovieDetailTableViewController.swift in Sources */,
 				AF472B8E1F58AD2900542790 /* AppDelegate.swift in Sources */,
