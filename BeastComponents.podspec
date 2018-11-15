@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "Beast Component"
   s.homepage     = "https://github.com/istsest/BeastComponents"
-  s.author       = { "Joon Jang" => "stsest@gmail.com" }
+  s.author       = { "Joon Jang" => "istsest@gmail.com" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/istsest/BeastComponents.git", :tag => s.version.to_s }
   s.source_files =  'BeastComponents/BeastComponents.framework/Headers/*.h'
