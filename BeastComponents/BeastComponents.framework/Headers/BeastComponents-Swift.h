@@ -524,7 +524,6 @@ SWIFT_CLASS("_TtC15BeastComponents13BCProgressBar")
 @property (nonatomic) float progress SWIFT_DEPRECATED_OBJC("Swift property 'BCProgressBar.progress' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, strong) UIColor * _Nullable progressColor SWIFT_DEPRECATED_OBJC("Swift property 'BCProgressBar.progressColor' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, strong) UIColor * _Nullable maskBackgroundColor SWIFT_DEPRECATED_OBJC("Swift property 'BCProgressBar.maskBackgroundColor' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
-@property (nonatomic) BOOL animating SWIFT_DEPRECATED_OBJC("Swift property 'BCProgressBar.animating' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic) float animationSpeed SWIFT_DEPRECATED_OBJC("Swift property 'BCProgressBar.animationSpeed' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
@@ -1087,7 +1086,6 @@ SWIFT_CLASS("_TtC15BeastComponents13BCProgressBar")
 @property (nonatomic) float progress SWIFT_DEPRECATED_OBJC("Swift property 'BCProgressBar.progress' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, strong) UIColor * _Nullable progressColor SWIFT_DEPRECATED_OBJC("Swift property 'BCProgressBar.progressColor' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic, strong) UIColor * _Nullable maskBackgroundColor SWIFT_DEPRECATED_OBJC("Swift property 'BCProgressBar.maskBackgroundColor' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
-@property (nonatomic) BOOL animating SWIFT_DEPRECATED_OBJC("Swift property 'BCProgressBar.animating' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @property (nonatomic) float animationSpeed SWIFT_DEPRECATED_OBJC("Swift property 'BCProgressBar.animationSpeed' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
