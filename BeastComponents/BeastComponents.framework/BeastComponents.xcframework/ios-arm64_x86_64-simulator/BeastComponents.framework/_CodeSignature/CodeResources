@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		UGykw7+ufBgSroQJ2UU3rTxckBI=
+		M3M2zRZ84Hx2h3tReHR+aUKG/TY=
 		</data>
 		<key>Headers/BCCoverContentView.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/BeastComponents-Swift.h</key>
 		<data>
-		emPDrHam11Sp3arF6VGf6DI0JKU=
+		m7tCZ60m8JNSkDmCHDvWbXZ7GBI=
 		</data>
 		<key>Headers/BeastComponents.h</key>
 		<data>
@@ -26,67 +26,67 @@
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ulj7/TjSqEGc0a3lPN+9oG4C45c=
+		CN3P33gfrDs7y4h8u7X8sjv5uAk=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		ulj7/TjSqEGc0a3lPN+9oG4C45c=
+		CN3P33gfrDs7y4h8u7X8sjv5uAk=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ywW746FOdrjTuzeX+yRphGl3RjE=
+		kF4uc8kWl6eWOfOkrXmyZNBJ8PM=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		ywW746FOdrjTuzeX+yRphGl3RjE=
+		kF4uc8kWl6eWOfOkrXmyZNBJ8PM=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		RBMxL/bKzD9A+mVaCxIDGqGat48=
+		UlmY5gkmKDO5IahX7P4q9ckBk24=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LB7bXDZXxHSelV/Wuvs4U5MMHhU=
+		Csarxm63oailkvyiiNlcXpIfU50=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7/H8pWKtLzwB7ep7NuB5aMuvDGI=
+		4X6JqSwlMv4Qna1jvbZIZxagyCY=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		RBMxL/bKzD9A+mVaCxIDGqGat48=
+		UlmY5gkmKDO5IahX7P4q9ckBk24=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		LB7bXDZXxHSelV/Wuvs4U5MMHhU=
+		Csarxm63oailkvyiiNlcXpIfU50=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		7/H8pWKtLzwB7ep7NuB5aMuvDGI=
+		4X6JqSwlMv4Qna1jvbZIZxagyCY=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		79Xlf9w+LZDSn9NwnAUvuxtyU8Q=
+		6oyD02oEA7kTSnyeHwRoe8zQvZQ=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tA3zKIQKJTyUQXv3YJcYuIN0UEw=
+		/ApdUCz6Q8uQcQ7vpj4XkmFUExw=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4mYtstkvHVbMko3Ki1Fk6xpVDgk=
+		CZHOnG4yFg0X7564hLzJZ7S2Pig=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		79Xlf9w+LZDSn9NwnAUvuxtyU8Q=
+		6oyD02oEA7kTSnyeHwRoe8zQvZQ=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		tA3zKIQKJTyUQXv3YJcYuIN0UEw=
+		/ApdUCz6Q8uQcQ7vpj4XkmFUExw=
 		</data>
 		<key>Modules/BeastComponents.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		4mYtstkvHVbMko3Ki1Fk6xpVDgk=
+		CZHOnG4yFg0X7564hLzJZ7S2Pig=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O6/diUzE9+X0F9togXGQBIzx0Gi7eg4UsvmNT7OU04c=
+			v6d+5CVpUqNYZmgkR4gtLgTJ96DGFB0S3NfslgHCgx0=
 			</data>
 		</dict>
 		<key>Headers/BCCoverContentView.h</key>
@@ -113,7 +113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/nWz8kV7ct/NIlnzNIbDsGMfWUIQYyMbvFzzhqHRCmI=
+			yCaVf5QGfZ4nZKNLZ0aVDmf+jTTeqeuHdkcma4uHlPE=
 			</data>
 		</dict>
 		<key>Headers/BeastComponents.h</key>
@@ -127,112 +127,112 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dUMiiRbmLMpMFI3i2z8CIn8Qn7uMY+l7CDVJwGpNSDg=
+			TJiqAl/Hp1Y5o1nC/XbYoMGL67Fmybvr4ULHCj0mt4E=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dUMiiRbmLMpMFI3i2z8CIn8Qn7uMY+l7CDVJwGpNSDg=
+			TJiqAl/Hp1Y5o1nC/XbYoMGL67Fmybvr4ULHCj0mt4E=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ws/GUh2595wDEnXRe24TlX6Eg/C4x/PR77qlrVWg0m4=
+			CkwnakFOgZdyO/UcWVgDicGKZHhYHcxUHJct6NkmVnY=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ws/GUh2595wDEnXRe24TlX6Eg/C4x/PR77qlrVWg0m4=
+			CkwnakFOgZdyO/UcWVgDicGKZHhYHcxUHJct6NkmVnY=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AK3CpEiR00TINgY0XEPAhTzc4DLRiwMKPwZmhKIgueM=
+			R9SLAiVynRr3EJX6CgBn91cNuvPvtIB/bhxiTjSWMl4=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IttxfPIqvI40j3Crue0vt924ThGN/YNYyy6ryMYW8YQ=
+			nFtFqFyy7IEBRknjxnoKA51uVv4HclJ3WoDkQ3gzu5U=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Mr21xNhLNC5tDbbgJSeU/AGgzDy1B4XnnSLPLmNEnE=
+			h6NNaZsTfZq1LFRnQtknQFc8+RJJ8mRW4tNAYkzTy1I=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AK3CpEiR00TINgY0XEPAhTzc4DLRiwMKPwZmhKIgueM=
+			R9SLAiVynRr3EJX6CgBn91cNuvPvtIB/bhxiTjSWMl4=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IttxfPIqvI40j3Crue0vt924ThGN/YNYyy6ryMYW8YQ=
+			nFtFqFyy7IEBRknjxnoKA51uVv4HclJ3WoDkQ3gzu5U=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Mr21xNhLNC5tDbbgJSeU/AGgzDy1B4XnnSLPLmNEnE=
+			h6NNaZsTfZq1LFRnQtknQFc8+RJJ8mRW4tNAYkzTy1I=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q+8lLYsO7+rxtXoaSu1kKulKr8Awxg2dwoNBGSEuvyQ=
+			nbTi0EwRwYYc4YVEVmyRTKJncPaUe3SHNv1BbMR0z+4=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OO0OZX2yig9YkGOr/qFCta3hpk+2nzllqYTsX9kSDYc=
+			LN5hTA2rWl/P0NgYwBlwTy2Ww6Sz79z6LYUIzmLHDyM=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PJ1EU8v/gV5P7Je3YS/LuA9uDB28yWoGMqBAV+nV9s=
+			TKFPt90Zq87TAIIF9XJ5fJTyBX8wdy2cDGZhl/7w7jA=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q+8lLYsO7+rxtXoaSu1kKulKr8Awxg2dwoNBGSEuvyQ=
+			nbTi0EwRwYYc4YVEVmyRTKJncPaUe3SHNv1BbMR0z+4=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OO0OZX2yig9YkGOr/qFCta3hpk+2nzllqYTsX9kSDYc=
+			LN5hTA2rWl/P0NgYwBlwTy2Ww6Sz79z6LYUIzmLHDyM=
 			</data>
 		</dict>
 		<key>Modules/BeastComponents.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PJ1EU8v/gV5P7Je3YS/LuA9uDB28yWoGMqBAV+nV9s=
+			TKFPt90Zq87TAIIF9XJ5fJTyBX8wdy2cDGZhl/7w7jA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

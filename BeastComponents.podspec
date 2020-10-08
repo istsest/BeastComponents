@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source_files =  'BeastComponents/BeastComponents.framework/Headers/*.h'
   s.vendored_frameworks = 'BeastComponents/BeastComponents.framework/BeastComponents.xcframework'
   s.resource = "BeastComponents/BeastComponentsBundle.bundle"
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '12.0'
   s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration'
   s.requires_arc = true
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)"',
