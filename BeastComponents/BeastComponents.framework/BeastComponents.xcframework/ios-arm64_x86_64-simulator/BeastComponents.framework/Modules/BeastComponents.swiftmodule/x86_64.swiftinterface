@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BeastComponents
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BeastComponents
 @_exported import BeastComponents
 import Foundation
 import Swift
@@ -12,19 +12,19 @@ import UIKit
 @objc @_inheritsConvenienceInitializers public class BCBubbleCellView : UIKit.UIView {
   public var style: BeastComponents.BCBubbleCellStyle {
     get
-    set
+    set(value)
   }
   @objc public var title: Swift.String? {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var weight: Swift.Double {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var detailText: Swift.String? {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc final public let backgroundImageView: UIKit.UIImageView
   @objc public var titleLabel: UIKit.UILabel? {
@@ -45,20 +45,20 @@ import UIKit
   }
   public var weightLabelTextFormat: BeastComponents.BCBubbleCellWeightLabelTextFormat {
     get
-    set
+    set(value)
   }
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 public struct BCBubbleCellStyle {
-  public static let noLabel: BeastComponents.BCBubbleCellStyle
-  public static let onlyTitleLabel: BeastComponents.BCBubbleCellStyle
-  public static let onlyWeightLabel: BeastComponents.BCBubbleCellStyle
-  public static let titleAndWeightLabel: BeastComponents.BCBubbleCellStyle
-  public static let titleAndDetailLabel: BeastComponents.BCBubbleCellStyle
-  public static let weightAndDetailLabel: BeastComponents.BCBubbleCellStyle
-  public static let titleAndWeightAndDetailLabel: BeastComponents.BCBubbleCellStyle
+  public static var noLabel: BeastComponents.BCBubbleCellStyle
+  public static var onlyTitleLabel: BeastComponents.BCBubbleCellStyle
+  public static var onlyWeightLabel: BeastComponents.BCBubbleCellStyle
+  public static var titleAndWeightLabel: BeastComponents.BCBubbleCellStyle
+  public static var titleAndDetailLabel: BeastComponents.BCBubbleCellStyle
+  public static var weightAndDetailLabel: BeastComponents.BCBubbleCellStyle
+  public static var titleAndWeightAndDetailLabel: BeastComponents.BCBubbleCellStyle
   public var hasTitleLabel: Swift.Bool {
     get
   }
@@ -73,42 +73,42 @@ public struct BCBubbleCellStyle {
   @objc weak public var dataSource: BeastComponents.BCCoverFlowViewDataSource?
   @objc override weak dynamic public var delegate: UIKit.UIScrollViewDelegate? {
     @objc get
-    @objc set
+    @objc set(newValue)
   }
   public var coverFlowStyle: BeastComponents.BCCoverFlowStyle {
     get
-    set
+    set(value)
   }
   @objc public var numberOfPresentingCovers: Swift.Int {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var heightOfAreaBeyondTopCover: CoreGraphics.CGFloat {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var gradientColorForStream: UIKit.UIColor {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var heightOverPassed: CoreGraphics.CGFloat {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var isContinuousSideBySide: Swift.Bool {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var additionalCoverHeightForSideBySide: CoreGraphics.CGFloat {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var topCoverContentView: BeastComponents.BCCoverContentView? {
     @objc get
   }
   @objc public var presentDetailAnimationController: BeastComponents.BCCoverFlowViewPresentDetailAnimationController {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
@@ -121,7 +121,7 @@ public struct BCBubbleCellStyle {
   @objc override dynamic public func layoutSubviews()
   @objc override dynamic public var contentOffset: CoreGraphics.CGPoint {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   @objc override dynamic public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
@@ -150,7 +150,7 @@ public struct BCBubbleCellAppearance {
 @objc @_inheritsConvenienceInitializers public class BCBubbleContainerView : UIKit.UIView {
   public var cellStyle: BeastComponents.BCBubbleCellStyle {
     get
-    set
+    set(value)
   }
   @objc weak public var dataSource: BeastComponents.BCBubbleContainerViewDataSource?
   @objc weak public var delegate: BeastComponents.BCBubbleContainerViewDelegate?
@@ -161,11 +161,11 @@ public struct BCBubbleCellAppearance {
   }
   public var cellAppearance: BeastComponents.BCBubbleCellAppearance {
     get
-    set
+    set(value)
   }
   public var cellWeightLabelTextFormat: BeastComponents.BCBubbleCellWeightLabelTextFormat {
     get
-    set
+    set(value)
   }
   @objc public func loadData(fromDataSource dataSource: BeastComponents.BCBubbleContainerViewDataSource?, andDelegate delegate: BeastComponents.BCBubbleContainerViewDelegate?)
   @objc public func reloadData()
@@ -178,15 +178,15 @@ public struct BCBubbleCellAppearance {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class BCProgressBar : UIKit.UIView {
   @objc public var progress: Swift.Float {
     @objc get
-    @objc set
+    @objc set(newValue)
   }
   @objc public var progressColor: UIKit.UIColor? {
     @objc get
-    @objc set
+    @objc set(newValue)
   }
   @objc public var maskBackgroundColor: UIKit.UIColor? {
     @objc get
-    @objc set
+    @objc set(newValue)
   }
   @objc public var animationSpeed: Swift.Float
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
@@ -228,35 +228,35 @@ public enum BCCoverFlowStyle {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class BCRatingBar : UIKit.UIView {
   @objc public var numberOfStars: Swift.Int {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var spaceBetweenStars: CoreGraphics.CGFloat {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var trackTintColor: UIKit.UIColor {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc override dynamic open func layoutSubviews()
   @objc override dynamic open var backgroundColor: UIKit.UIColor? {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var ratingTintColor: UIKit.UIColor! {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var ratingBackgroundImage: UIKit.UIImage? {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var internalRate: Swift.Float
   @objc public var rate: Swift.Float {
     @objc get
-    @objc set
+    @objc set(newValue)
   }
   @objc public func setRate(_ rate: Swift.Float, animated: Swift.Bool)
   @objc deinit
@@ -264,7 +264,7 @@ public enum BCCoverFlowStyle {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class BCArrowAlertView : UIKit.UILabel {
   @objc public var arrowHeadDepth: Swift.Int {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc public var animationSpeed: Swift.Float
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
@@ -292,8 +292,8 @@ public enum BCCoverFlowStyle {
   @objc public func animateZoomInTransition(using transitionContext: UIKit.UIViewControllerContextTransitioning)
   @objc public func animateZoomOutTransition(using transitionContext: UIKit.UIViewControllerContextTransitioning)
   @objc public func animateZoomAndFlipTransition(using transitionContext: UIKit.UIViewControllerContextTransitioning)
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 public enum BCBubbleCellWeightLabelTextFormatType {
   case percentage
@@ -318,9 +318,3 @@ public struct BCBubbleCellWeightLabelTextFormat {
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
 }
-extension BeastComponents.BCCoverFlowManageItemAnimation : Swift.Equatable {}
-extension BeastComponents.BCCoverFlowManageItemAnimation : Swift.Hashable {}
-extension BeastComponents.BCCoverFlowStyle : Swift.Equatable {}
-extension BeastComponents.BCCoverFlowStyle : Swift.Hashable {}
-extension BeastComponents.BCBubbleCellWeightLabelTextFormatType : Swift.Equatable {}
-extension BeastComponents.BCBubbleCellWeightLabelTextFormatType : Swift.Hashable {}
