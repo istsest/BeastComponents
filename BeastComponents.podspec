@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source_files =  'BeastComponents/BeastComponents.framework/Headers/*.h'
   s.vendored_frameworks = 'BeastComponents/BeastComponents.framework/BeastComponents.xcframework'
   s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
-  s.resource = "BeastComponents/BeastComponentsBundle.bundle"
+  #s.resource = "BeastComponents/BeastComponentsBundle.bundle"
   s.ios.deployment_target = '10.0'
   s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration'
   s.requires_arc = true
