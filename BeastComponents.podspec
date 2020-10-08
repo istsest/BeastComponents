@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration'
   s.requires_arc = true
-  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)"',
-                   'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/BeastComponents"' }
+  #s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)"',
+  #                 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/BeastComponents"' }
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
