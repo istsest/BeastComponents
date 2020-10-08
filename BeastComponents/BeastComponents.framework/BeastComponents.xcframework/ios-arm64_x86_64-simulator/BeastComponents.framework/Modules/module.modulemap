@@ -1,0 +1,11 @@
+framework module BeastComponents {
+  umbrella header "BeastComponents.h"
+
+  export *
+  module * { export * }
+}
+
+module BeastComponents.Swift {
+    header "BeastComponents-Swift.h"
+    requires objc
+}
